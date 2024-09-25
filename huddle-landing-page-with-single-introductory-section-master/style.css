@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Violet);
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.logo{
+    width: 100px;
+    margin: 30px 38px;
+    float: left;
+}
+
+.container{
+    width: 320px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container img{
+    width: 250px;
+    margin-bottom: 30px;
+}
+.container h1{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.container p{
+    color: rgba(255, 255, 255, 0.782);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.container-bttn{
+    width: 165px;
+    border-style: none;
+    border-radius: 18px;
+    line-height: 30px;
+    color: var(--Violet);
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.301) ;
+}
+
+.container-bttn:hover{
+    background-color: var(--Soft-Magenta);
+    color: white;
+    cursor: pointer;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.fa-brands{
+    color: white;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 10px;
+    margin: 5px;
+
+}
+
+.fa-brands:hover{
+    color: var(--Soft-Magenta);
+    border: 1px solid var(--Soft-Magenta);
+    cursor: pointer;
+}
+.attribution { font-size: 11px; text-align: center; font-family: Arial; }
+.attribution a { color: hsl(228, 45%, 87%); text-decoration: none; font-family: Arial; }
+
+@media (min-width: 1024px) {
+    body {
+      font-size: 20px;
+      margin: 30px;
+      background-image: url(images/bg-desktop.svg);
+    }
+    .logo{
+        width: 200px;
+        margin: 0px 0px  30px 100px;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        padding: 0px 80px;
+        text-align: left;
+    }
+    .container img{
+        width: 660px;
+
+    }
+    .container h1{
+        font-size: 50px;
+        margin-bottom: 15px;
+        padding-right: 50px;
+    }
+    .container p{
+        font-size: 18px;
+        padding-right: 100px;
+        margin-bottom: 40px;
+    }
+    .container-bttn{
+        line-height: 30px;
+        padding: 8px 0;
+        font-size: 14px;
+        border-radius: 40px;
+
+    }
+    .right-side{
+        margin-left: 30px;
+    }
+    .icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 170px;
+    }
+  }
